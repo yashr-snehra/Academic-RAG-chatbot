@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "academic-rag-chatbot"
+version = "0.1.0"
+description = "Enterprise-grade Academic RAG Chatbot"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115"
+uvicorn = {extras = ["standard"], version = "^0.32"}
+langchain = "^0.3"
+langchain-ollama = "^0.2"
+langchain-community = "^0.3"
+langchain-qdrant = "^0.2"
+langchain-text-splitters = "^0.3"
+qdrant-client = {extras = ["async"], version = "^1.12"}
+redis = {extras = ["hiredis"], version = "^5.2"}
+pymupdf = "^1.24"
+python-multipart = "^0.0.12"
+pydantic-settings = "^2.6"
+httpx = "^0.28"
+ragas = "^0.2"
+pandas = "^2.2"
+datasets = "^3.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3"
+pytest-asyncio = "^0.25"
+pytest-cov = "^6.0"
+locust = "^2.32"
+ruff = "^0.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+# Only collect test_*.py — keeps the Locust file (load_test.py) out of pytest runs.
+python_files = ["test_*.py"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

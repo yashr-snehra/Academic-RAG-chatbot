@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What is the main architectural contribution of this paper?",
+    "ground_truth": "REPLACE THIS: Copy the actual answer from your paper here. Be specific — include the exact architectural name, key design decisions, and what problem it solves."
+  },
+  {
+    "question": "What evaluation datasets were used to benchmark the proposed method?",
+    "ground_truth": "REPLACE THIS: List the exact dataset names, their sizes, and what split was used for evaluation."
+  },
+  {
+    "question": "What baseline models were the proposed method compared against?",
+    "ground_truth": "REPLACE THIS: List each baseline model name and its source citation."
+  },
+  {
+    "question": "What are the stated limitations of the proposed approach?",
+    "ground_truth": "REPLACE THIS: Copy the limitations the authors explicitly acknowledge in the paper."
+  },
+  {
+    "question": "What quantitative results did the model achieve on the primary benchmark?",
+    "ground_truth": "REPLACE THIS: Include the exact metric (BLEU, accuracy, F1, etc.), the score, and the benchmark name."
+  },
+  {
+    "question": "What training data was used and how large was it?",
+    "ground_truth": "REPLACE THIS: Describe the training corpus, its size, and how it was collected or curated."
+  },
+  {
+    "question": "What is the time complexity of the proposed algorithm?",
+    "ground_truth": "REPLACE THIS: Copy the exact complexity analysis from the paper, including the Big-O notation."
+  },
+  {
+    "question": "Who funded this research?",
+    "ground_truth": "REPLACE THIS: Copy the acknowledgment section's funding information."
+  },
+  {
+    "question": "What is the author's personal email address?",
+    "ground_truth": "The provided documents do not contain sufficient information to answer this question."
+  },
+  {
+    "question": "Does this paper predict stock market prices?",
+    "ground_truth": "The provided documents do not contain sufficient information to answer this question."
+  }
+]
